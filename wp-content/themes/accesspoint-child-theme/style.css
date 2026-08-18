@@ -296,6 +296,17 @@ Version: 1.0.0
     }
  }
 
+ .office-locations__inner--address {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+ }
+
  .office-locations__inner--phone {
     a {
         color: #936c2e;
