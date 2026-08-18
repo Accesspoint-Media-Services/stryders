@@ -5,7 +5,7 @@
 ?>
 
 <?php if (have_rows('office_locations') ) :?>
-    <section class="office-locations">
+    <section class="office-locations container">
         
             <?php while (have_rows('office_locations') ) : the_row(); 
                 $office_name = get_sub_field('location_name');
