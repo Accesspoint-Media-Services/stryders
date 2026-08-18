@@ -29,10 +29,19 @@
                                     </div>
                                 <?php endif; ?>
 
-                                <?php if($address) : ?>
+                                <?php if($address or $phone) : ?>
                                     <div class="office-locations__inner--address">
                                         <?php echo ($address); ?>
+
+                                        <?php if($phone) : ?>
+                                            <div class="office-locations__inner--phone">
+                                                <a href="tel:<?php echo($phone)?>"><span class="helper">T:</span> <?php echo($phone) ; ?></a>
+                                            </div>
+                                        <?php endif; ?>
+
                                     </div>
+
+
                                 <?php endif; ?>
 
                             </div>
