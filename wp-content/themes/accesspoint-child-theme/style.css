@@ -259,6 +259,8 @@ Version: 1.0.0
     flex-direction: column;
     gap: 30px;
     border-radius: 9px;
+    border-top: 1px solid ;
+    padding: 50px 0; 
  }
 
  .office-locations__item {
