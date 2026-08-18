@@ -298,13 +298,13 @@ Version: 1.0.0
     @media (min-width:1200px){
         flex: 1;
     }
-    h2, p {
+    h2, h3, h4, h5, h6, p {
         color: #fff;
     }
  }
 
  .office-locations__inner--copy {
-    h2, p {
+    h2, h3, h4, h5, h6, p {
         color: #fff;
     }
  }
@@ -313,7 +313,7 @@ Version: 1.0.0
     display: flex;
     flex-direction: column;
     gap: 18px;
-    p {
+    h2, h3, h4, h5, h6, p {
         &:last-of-type {
             margin-bottom: 0;
         }
