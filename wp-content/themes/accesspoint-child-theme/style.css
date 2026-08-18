@@ -266,6 +266,7 @@ Version: 1.0.0
     flex-wrap: wrap;
     gap: 30px;
     padding: 30px;
+    border-radius: 9px;
 
     @media (min-width:992px){
         padding: 50px;
