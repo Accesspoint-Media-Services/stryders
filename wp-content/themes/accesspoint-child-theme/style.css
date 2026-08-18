@@ -258,8 +258,7 @@ Version: 1.0.0
     display: flex;
     flex-direction: column;
     gap: 30px;
-    border-radius: 9px;
-    border-top: 1px solid ;
+    border-top: 1px solid #004249;
     padding: 50px 0; 
  }
 
