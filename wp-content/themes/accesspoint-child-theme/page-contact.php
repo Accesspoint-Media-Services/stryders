@@ -5,6 +5,17 @@
 get_header();
 ?>
 
+<div class="banner">
+    <div class="banner__content">
+        <div class="banner__title">
+            <?php the_title('<h1>', '</h1>'); ?>
+        </div>
+    </div>
+    <?php if ($banner_id) : ?>
+        <?php echo wp_get_attachment_image($banner_id, 'full'); ?>
+    <?php endif; ?>
+</div>
+
 <?php while ( have_posts() ) : the_post(); ?>
     <main id="primary" class="site-main">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -59,13 +70,7 @@ get_header();
 
                     <?php if ( $google_map ) : ?>
                         <div class="office-locations__inner--map">
-                            <?php
-                            // If 'google_map' is ACF's native Google Map field type, this
-                            // returns an array (lat, lng, zoom...), not markup — echoing it
-                            // directly will print "Array" rather than a map. Confirm the
-                            // field type; happy to swap this for a proper embed if so.
-                            echo ( $google_map );
-                            ?>
+                            <?php echo ( $google_map ); ?>
                         </div>
                     <?php endif; ?>
 
