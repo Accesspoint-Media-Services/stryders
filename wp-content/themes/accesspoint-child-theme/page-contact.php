@@ -28,6 +28,12 @@
                                 </div>
                             <?php endif; ?>
 
+                            <?php if($address) : ?>
+                                <div class="office-locations__inner--address">
+                                    <?php echo ($address); ?>
+                                </div>
+                            <?php endif; ?>
+
                         </div>
 
                         <?php if($google_map) : ?>
