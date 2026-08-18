@@ -35,10 +35,11 @@
 
         <?php while ( have_rows( 'office_locations' ) ) : the_row();
             $office_name = get_sub_field( 'location_name' );
-            $content     = get_sub_field( 'content' );
-            $address     = get_sub_field( 'address' );
-            $phone       = get_sub_field( 'phone_number' );
-            $google_map  = get_sub_field( 'google_map' );
+            $content = get_sub_field( 'content' );
+            $address = get_sub_field( 'address' );
+            $phone = get_sub_field( 'phone_number' );
+            $google_map = get_sub_field( 'google_map' );
+            $heading = get_sub_field ('heading_tag');
         ?>
             <?php if ( $office_name || $address || $content || $google_map ) : ?>
                 <div class="office-locations__item has-primary-background-color">
@@ -46,7 +47,9 @@
                     <?php if ( $office_name || $address || $content ) : ?>
                         <div class="office-locations__inner--content">
                             <?php if ( $office_name ) : ?>
-                                <h2 class="office-locations__inner--office-name"><?php echo esc_html( $office_name ); ?></h2>
+                                <?php echo '<' . esc_attr( $heading ) . ' class="office-locations__inner--office-name">'; ?>
+                                    <?php echo esc_html( $office_name ); ?>
+                                <?php echo '</' . esc_attr( $heading ) . '>'; ?>
                             <?php endif; ?>
 
                             <?php if ( $content ) : ?>
