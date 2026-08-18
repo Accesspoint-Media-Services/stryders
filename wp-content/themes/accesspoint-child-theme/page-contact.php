@@ -1,11 +1,12 @@
 <?php
 
-/* Template Name: Contact */
+    /* Template Name: Contact */
 
-get_header();
+    get_header();
 
-$default = get_field('default_banner', 'options');
-$banner_id = esc_html($default['ID']);
+    $default = get_field('default_banner', 'options');
+    $banner_id = esc_html($default['ID']);
+    
 ?>
 
 <div class="banner">
@@ -18,8 +19,6 @@ $banner_id = esc_html($default['ID']);
         <?php echo wp_get_attachment_image($banner_id, 'full'); ?>
     <?php endif; ?>
 </div>
-
-
 
 <?php while ( have_posts() ) : the_post(); ?>
     <main id="primary" class="site-main">
