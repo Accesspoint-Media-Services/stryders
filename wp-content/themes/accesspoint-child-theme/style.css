@@ -309,17 +309,25 @@ Version: 1.0.0
     }
  }
 
-.office-locations__inner--copy.content-size-small p {
-    font-size: 14px;
-}
+    .office-locations__inner--copy.content-size-small {
+        p {
+            font-size: 14px;
+        }
+        
+    }
 
-.office-locations__inner--copy.content-size-medium p {
-    font-size: 16px;
-}
+    .office-locations__inner--copy.content-size-medium {
+        p {
+            font-size: 16px;
+        }
+        
+    }
 
-.office-locations__inner--copy.content-size-large p {
-    font-size: 18px;
-}
+    .office-locations__inner--copy.content-size-large {
+        p {
+            font-size: 18px;        
+        }
+    }
 
 
  .office-locations__inner--address {
