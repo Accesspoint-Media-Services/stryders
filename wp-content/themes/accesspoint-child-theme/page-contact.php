@@ -3,6 +3,8 @@
 /* Template Name: Contact */
 
 get_header();
+
+$banner_id = esc_html($default['ID']);
 ?>
 
 <div class="banner">
@@ -15,6 +17,8 @@ get_header();
         <?php echo wp_get_attachment_image($banner_id, 'full'); ?>
     <?php endif; ?>
 </div>
+
+
 
 <?php while ( have_posts() ) : the_post(); ?>
     <main id="primary" class="site-main">
