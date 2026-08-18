@@ -306,20 +306,23 @@ Version: 1.0.0
     }
  }
 
-.office-locations__inner--copy.content-size-small p,
-.office-locations__inner--address.content-size-small p {
-    font-size: 14px;
-}
+    .office-locations__inner--copy.content-size-small p,
+    .office-locations__inner--address.content-size-small p,
+    .office-locations__inner--address.content-size-small a {
+        font-size: 14px;
+    }
 
-.office-locations__inner--copy.content-size-medium p,
-.office-locations__inner--address.content-size-medium p {
-    font-size: 16px;
-}
+    .office-locations__inner--copy.content-size-medium p,
+    .office-locations__inner--address.content-size-medium p,
+    .office-locations__inner--address.content-size-medium a {
+        font-size: 16px;
+    }
 
-.office-locations__inner--copy.content-size-large p,
-.office-locations__inner--address.content-size-large p {
-    font-size: 20px;
-}
+    .office-locations__inner--copy.content-size-large p,
+    .office-locations__inner--address.content-size-large p,
+    .office-locations__inner--address.content-size-large a {
+        font-size: 20px;
+    }
 
 
  .office-locations__inner--address {
