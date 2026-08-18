@@ -255,4 +255,8 @@ Version: 1.0.0
 
  /* Contact page locations block */
 
- 
+ .office-locations {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
