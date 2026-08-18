@@ -60,8 +60,8 @@
                             <?php endif; ?>
 
                             <?php if ( $address || $phone ) : ?>
-                                <div class="office-locations__inner--address">
-                                    <?php echo ( $address ); ?>
+                                <div class="office-locations__inner--address content-size-<?php echo esc_attr( $content_font_size ); ?>">
+                                    <?php echo wp_kses_post( $address ); ?>
 
                                     <?php if ( $phone ) : ?>
                                         <div class="office-locations__inner--phone">
