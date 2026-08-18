@@ -260,6 +260,18 @@ Version: 1.0.0
     gap: 30px;
     border-top: 1px solid #004249;
     padding: 50px 0; 
+
+    @media (min-width:992px){
+        padding: 50px 0;
+    }
+
+    @media (min-width:1200px){
+        padding: 80px 0;
+    }
+
+    @media (min-width:1440px){
+        padding: 100px 0 ;
+    }
  }
 
  .office-locations__item {
