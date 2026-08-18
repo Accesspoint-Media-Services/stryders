@@ -259,4 +259,16 @@ Version: 1.0.0
     display: flex;
     flex-direction: column;
     gap: 30px;
+    border-radius: 9px;
+ }
+
+ .office-locations__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+ }
+ .office-locations__inner--map {
+    iframe {
+        border-radius: 9px;
+    }
  }
