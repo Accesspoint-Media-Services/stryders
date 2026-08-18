@@ -36,6 +36,7 @@
         <?php while ( have_rows( 'office_locations' ) ) : the_row();
             $office_name = get_sub_field( 'location_name' );
             $content = get_sub_field( 'content' );
+            $content_font_size = get_sub_field( 'content_font_size' );
             $address = get_sub_field( 'address' );
             $phone = get_sub_field( 'phone_number' );
             $google_map = get_sub_field( 'google_map' );
@@ -53,7 +54,7 @@
                             <?php endif; ?>
 
                             <?php if ( $content ) : ?>
-                                <div class="office-locations__inner--copy">
+                                <div class="office-locations__inner--copy content-size-<?php echo esc_attr( $content_font_size ); ?>">
                                     <?php echo wp_kses_post( $content ); ?>
                                 </div>
                             <?php endif; ?>
