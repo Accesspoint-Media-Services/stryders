@@ -53,7 +53,7 @@ get_header();
 
                             <?php if ( $address || $phone ) : ?>
                                 <div class="office-locations__inner--address">
-                                    <?php echo esc_html( $address ); ?>
+                                    <?php echo ( $address ); ?>
 
                                     <?php if ( $phone ) : ?>
                                         <div class="office-locations__inner--phone">
