@@ -4,6 +4,7 @@
 
 get_header();
 
+$default = get_field('default_banner', 'options');
 $banner_id = esc_html($default['ID']);
 ?>
 
