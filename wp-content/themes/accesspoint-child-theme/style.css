@@ -252,7 +252,6 @@ Version: 1.0.0
     margin-top: auto;
 }
 
-
  /* Contact page locations block */
 
  .office-locations {
@@ -267,7 +266,23 @@ Version: 1.0.0
     flex-wrap: wrap;
     gap: 30px;
  }
+
+ .office-locations__inner--content {
+    @media (min-width:1200px){
+        flex: 1;
+    }
+    h2, p {
+        color: #fff;
+    }
+ }
+
  .office-locations__inner--map {
+    width: 100%;
+    @media (min-width:1200px){
+        flex: 1 1 432px;
+        max-width: 432px;
+    }
+
     iframe {
         border-radius: 9px;
     }
