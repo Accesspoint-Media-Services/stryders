@@ -1,0 +1,253 @@
+/*
+Theme Name: Accesspoint Child Theme
+Theme URI: https://accesspoint.legal
+Author: Accesspoint Legal
+Author URI: https://accesspoint.legal
+Description: Stryders child theme, 2026. 
+Template: indigotree-theme-2021
+Version: 1.0.0
+*/
+
+.beige-background-insights {
+    padding-top: 40px;
+    padding-bottom: 40px;
+	background-color: #e6e3d0;
+	margin-bottom: 60px;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+	column-gap: 32px;
+    margin-bottom: 7rem;
+}
+
+.insight-title {
+	font-size: 23px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+.insight-title-link {
+	text-decoration: none;
+}
+
+.insights-cat-date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+		gap: 6px;
+		margin-top: auto;
+		font-size: 18px;
+		font-weight: 600;
+}
+
+.insight-date {
+		font-weight: 400;
+		font-size: 16px;
+}
+
+.insight-ap-card {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1440px) {
+    .insights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .insights-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#insights-expertise,
+#insights-type {
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b8a96a' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.insight-cat {
+    padding-left: 10px;
+}
+
+.insight-cat--news {
+    border-left: 3px solid #1a3a3a;
+}
+
+.insight-cat--insights-opinions {
+    border-left: 3px solid #b8a96a;
+}
+
+.blog .main {
+    background-image: none !important;
+}
+
+.page-id-552 .main {
+    background-image: none !important;
+}
+
+#insights-expertise,
+#insights-type {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b8a96a' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.insights-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.insights-filters__search {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    gap: 8px;
+    border: 1px solid #b8a96a;
+    border-bottom: 3px solid #b8a96a;
+    padding: 10px 16px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.insights-filters__search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+    color: #1a3a3a;
+}
+
+.insights-filters__search svg {
+    color: #b8a96a;
+    flex-shrink: 0;
+}
+
+#insights-expertise {
+    background: transparent;
+}
+
+#insights-type {
+    background: transparent;
+}
+
+
+.insights-filters__select {
+    border: 1px solid #b8a96a;
+    border-bottom: 3px solid #b8a96a;
+    padding: 10px 32px 10px 16px;
+    font-size: 14px;
+    color: #1a3a3a;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b8a96a' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    outline: none;
+
+}
+
+.insights-sort {
+    margin-left: auto;
+    border-color: transparent;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.insights-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.insights-spinner__inner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #e8e4d9;
+    border-top-color: #1a3a3a;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+/* VACANCIES */
+
+.vacancy-text {
+    margin-bottom: 4rem;
+}
+
+.vacancy-sorry {
+    margin-bottom:10rem;;
+    margin-top:10rem;;
+}
+
+#vacancy-location {
+    background: transparent;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b8a96a' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    min-width: 14rem;
+}
+
+.vacancy-card {
+    background-color: #004249;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.vacancy-items {
+    background-color: #004249;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2rem;;
+    padding-right: 2rem;;
+    padding-top: 2rem;;
+    height: 100%;;
+}
+
+.vacancy-title {
+    color:#ffff;
+    min-height: 6rem; 
+}
+
+.vacancy-fields {
+    margin-top: 0;
+    height: 100%;
+}
+
+.vacancy-excerpt {
+    border-top: #e6e3d0 1px solid;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.view-job {
+    background-color: #B18641;
+    padding-bottom: 0.5rem;;
+    padding-top: 0.5rem;;
+    color:#ffff;
+    text-decoration: none;
+    padding-left: 2rem;;
+    padding-right: 2rem;;
+    margin-top: auto;
+}
