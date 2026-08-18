@@ -265,12 +265,31 @@ Version: 1.0.0
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 30px;
+
+    @media (min-width:992px){
+        padding: 50px;
+    }
+
+    @media (min-width:1200px){
+        padding: 80px;
+    }
+
+    @media (min-width:1440px){
+        padding: 100px;
+    }
  }
 
  .office-locations__inner--content {
     @media (min-width:1200px){
         flex: 1;
     }
+    h2, p {
+        color: #fff;
+    }
+ }
+
+ .office-locations__inner--copy {
     h2, p {
         color: #fff;
     }
@@ -285,5 +304,6 @@ Version: 1.0.0
 
     iframe {
         border-radius: 9px;
+        width: 100%;
     }
  }
