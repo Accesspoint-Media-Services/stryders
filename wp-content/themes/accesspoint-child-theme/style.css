@@ -310,6 +310,10 @@ Version: 1.0.0
  .office-locations__inner--phone {
     a {
         color: #936c2e;
+
+        &:hover {
+            color: #fff;
+        }
     }
 
     .helper {
