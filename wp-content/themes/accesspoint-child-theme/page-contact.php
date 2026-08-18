@@ -17,29 +17,31 @@
                 <?php if( $office_name or $address or $content or $google_map ) : ?>
                     <div class="office-locations__item has-primary-background-color">
                         
-                        <div class="office-locations__inner--content">  
-                            <?php if($office_name) : ?>
-                                <h2 class="office-locations__inner--office-name"><?php echo ($office_name); ?></h2>
-                            <?php endif; ?>
+                        <?php if( $office_name or $address or $content ) : ?>
+                            <div class="office-locations__inner--content">  
+                                <?php if($office_name) : ?>
+                                    <h2 class="office-locations__inner--office-name"><?php echo ($office_name); ?></h2>
+                                <?php endif; ?>
 
-                            <?php if($content) : ?>
-                                <div class="office-locations__inner--copy">
-                                    <?php echo ($content); ?>
-                                </div>
-                            <?php endif; ?>
+                                <?php if($content) : ?>
+                                    <div class="office-locations__inner--copy">
+                                        <?php echo ($content); ?>
+                                    </div>
+                                <?php endif; ?>
 
-                            <?php if($address) : ?>
-                                <div class="office-locations__inner--address">
-                                    <?php echo ($address); ?>
-                                </div>
-                            <?php endif; ?>
+                                <?php if($address) : ?>
+                                    <div class="office-locations__inner--address">
+                                        <?php echo ($address); ?>
+                                    </div>
+                                <?php endif; ?>
 
-                        </div>
+                            </div>
+                        <?php endif; ?>
 
                         <?php if($google_map) : ?>
-                        <div class="office-locations__inner--map">
-                            <?php echo ($google_map); ?>
-                        </div>
+                            <div class="office-locations__inner--map">
+                                <?php echo ($google_map); ?>
+                            </div>
                         <?php endif; ?>
                     <?php endif; ?>
                 </div>
