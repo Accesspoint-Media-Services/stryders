@@ -14,7 +14,7 @@
                 $phone = get_sub_field('phone_number');
                 $google_map = get_sub_field('google_map');
             ?>
-                <?php if( $office_name or $address or $content or $google_map ) ?>
+                <?php if( $office_name or $address or $content or $google_map ) : ?>
                     <div class="office-locations__item has-primary-background-color">
                         <div class="office-locations__inner--content">  
                             <?php if($office_name) : ?>
