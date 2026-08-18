@@ -282,16 +282,13 @@ Version: 1.0.0
     border-radius: 9px;
 
     @media (min-width:992px){
-        padding: 50px;
+        padding: 32px;
     }
 
     @media (min-width:1200px){
-        padding: 80px;
+        padding: 40px;
     }
 
-    @media (min-width:1440px){
-        padding: 100px;
-    }
  }
 
  .office-locations__inner--content {
